@@ -1,0 +1,503 @@
+@charset "UTF-8";
+/* CSS Document */
+html{
+	scroll-behavior: smooth;
+	scroll-padding-top: 80px;
+}
+
+body{
+	background-color: #F8F8F8;
+	color: #222222;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 1.8;
+}
+
+h1, h2{
+	font-family: 'Playfair Display', serif;
+	font-style: italic;
+	font-weight: 900;
+	color: #222222;
+}
+
+h3{
+	font-family: 'Josefin Sans', sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	color: #222222;
+}
+
+a{
+	color: #222222;
+}
+
+
+/* Encabezado */
+
+.header-portafolio{
+	background-color: #F8F8F8;
+	border-bottom: 1px solid #222222;
+	padding: 10px 40px;
+}
+
+.header-portafolio .navbar-brand{
+	font-family: 'Playfair Display', serif;
+	font-style: italic;
+	font-weight: 900;
+	font-size: 24px;
+	color: #222222;
+}
+
+.header-portafolio .nav-link{
+	font-size: 13px;
+	font-weight: 400;
+	letter-spacing: 3px;
+	text-transform: uppercase;
+	color: #222222;
+	padding: 8px 16px;
+}
+
+.header-portafolio .nav-link:hover,
+.header-portafolio .nav-link:focus{
+	text-decoration: underline;
+	text-underline-offset: 6px;
+}
+
+.header-portafolio .navbar-toggler{
+	border: none;
+	color: #222222;
+	font-size: 24px;
+}
+
+
+/* Inicio */
+
+#inicio{
+	padding: 110px 0 90px 0;
+}
+
+.profesion{
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.titulo-nombre{
+	font-size: clamp(44px, 9vw, 96px);
+	line-height: 1.05;
+	margin-bottom: 25px;
+}
+
+.redes-inicio{
+	margin-bottom: 0;
+}
+
+.redes-inicio a{
+	font-size: 14px;
+	letter-spacing: 3px;
+	text-decoration: none;
+	margin: 0 12px;
+}
+
+.redes-inicio a:hover{
+	text-decoration: underline;
+	text-underline-offset: 5px;
+}
+
+
+/* Acerca de mí */
+
+#acerca{
+	padding: 30px 0 90px 0;
+	overflow: hidden;
+}
+
+.foto-acerca{
+	position: relative;
+	margin: 0;
+}
+
+.foto-acerca img{
+	display: block;
+	width: 100%;
+}
+
+.cuadro-sobre{
+	position: absolute;
+	right: -40px;
+	bottom: 60px;
+	width: 230px;
+	height: 230px;
+	background-color: #222222;
+	border: 14px solid #FFFFFF;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.cuadro-sobre h2{
+	font-size: 30px;
+	color: #FFFFFF;
+	margin: 0;
+	line-height: 1.1;
+}
+
+.cuadro-sobre p{
+	color: #FFFFFF;
+	font-size: 16px;
+	letter-spacing: 6px;
+	text-transform: uppercase;
+	margin: 6px 0 0 0;
+}
+
+.texto-acerca{
+	padding-left: 50px;
+}
+
+.texto-acerca p{
+	font-size: 20px;
+	line-height: 1.9;
+	margin: 0;
+}
+
+.trayectoria{
+	display: grid;
+	gap: 18px 30px;
+	margin: 80px 0 0 0;
+	padding-top: 40px;
+	border-top: 1px solid #222222;
+}
+
+.trayectoria dt{
+	font-size: 13px;
+	font-weight: 600;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	line-height: 1.8;
+}
+
+.trayectoria dd{
+	margin: 0;
+	font-size: 18px;
+}
+
+
+/* Servicios */
+
+#servicios{
+	padding: 90px 0;
+	background-color: #F8F8F8;
+	border-top: 1px solid #222222;
+}
+
+.titulo-seccion{
+	font-size: 46px;
+	line-height: 1.1;
+	margin-bottom: 40px;
+}
+
+.servicio{
+	display: flex;
+	gap: 24px;
+	align-items: flex-start;
+	padding: 28px 0;
+	border-top: 1px solid #222222;
+}
+
+.servicio:last-of-type{
+	border-bottom: 1px solid #222222;
+}
+
+.icono-servicio{
+	flex: none;
+	width: 40px;
+	margin-top: 8px;
+	font-size: 28px;
+}
+
+.servicio h3{
+	font-size: 24px;
+	margin-bottom: 8px;
+}
+
+.servicio p{
+	font-size: 17px;
+	margin: 0;
+}
+
+.tarifas{
+	background-color: #222222;
+	color: #FFFFFF;
+	padding: 40px 32px;
+}
+
+.tarifas h3{
+	color: #FFFFFF;
+	font-size: 32px;
+	margin-bottom: 28px;
+}
+
+.tarifas li{
+	margin-bottom: 24px;
+	font-size: 17px;
+	letter-spacing: 0.5px;
+}
+
+.tarifas strong{
+	font-weight: 600;
+}
+
+
+/* Portafolio */
+
+#portafolio{
+	padding: 90px 0;
+	background-color: #FFFFFF;
+}
+
+.intro-portafolio{
+	max-width: 560px;
+	color: #6B6B6B;
+	margin-bottom: 40px;
+}
+
+#portafolio figure{
+	margin: 0;
+}
+
+#portafolio figure a{
+	display: block;
+	overflow: hidden;
+}
+
+#portafolio figure img{
+	display: block;
+	width: 100%;
+	aspect-ratio: 3 / 4;
+	object-fit: cover;
+	transition: transform 0.4s;
+}
+
+#portafolio figure a:hover img{
+	transform: scale(1.04);
+}
+
+#portafolio figcaption{
+	margin-top: 12px;
+	font-size: 14px;
+	font-weight: 400;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+
+/* Contacto */
+
+#contacto{
+	padding: 90px 0;
+	background-color: #F8F8F8;
+}
+
+.intro-contacto{
+	margin-bottom: 30px;
+}
+
+.input-contacto{
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid #222222;
+	border-radius: 0;
+	padding: 14px 0;
+	margin-bottom: 20px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 18px;
+	color: #222222;
+}
+
+.input-contacto::placeholder{
+	color: #6B6B6B;
+}
+
+.input-contacto:focus{
+	background-color: transparent;
+	color: #222222;
+	box-shadow: 0 2px 0 0 #222222;
+}
+
+.btn-enviar{
+	background-color: #222222;
+	color: #FFFFFF;
+	border: 1px solid #222222;
+	border-radius: 0;
+	padding: 14px 40px;
+	margin-top: 10px;
+	font-size: 13px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+}
+
+.btn-enviar:hover{
+	background-color: transparent;
+	color: #222222;
+	border: 1px solid #222222;
+}
+
+.datos-contacto h3{
+	font-size: 30px;
+	margin-bottom: 25px;
+}
+
+.datos-contacto address p{
+	margin-bottom: 14px;
+	font-size: 18px;
+}
+
+.datos-contacto i{
+	width: 30px;
+}
+
+.datos-contacto a{
+	text-decoration: none;
+}
+
+.datos-contacto a:hover{
+	text-decoration: underline;
+	text-underline-offset: 4px;
+}
+
+
+/* Footer */
+
+#footer{
+	background-color: #222222;
+	color: #FFFFFF;
+	padding: 50px 0;
+}
+
+.nombre-footer{
+	font-family: 'Playfair Display', serif;
+	font-style: italic;
+	font-weight: 900;
+	font-size: 30px;
+	margin: 0 0 15px 0;
+}
+
+.redes-footer{
+	margin-bottom: 0;
+}
+
+.redes-footer a{
+	color: #FFFFFF;
+	font-size: 22px;
+	margin: 0 12px;
+}
+
+.redes-footer a:hover{
+	opacity: 0.7;
+}
+
+.derechos{
+	margin: 20px 0 0 0;
+	font-size: 14px;
+	letter-spacing: 2px;
+	color: #CFCFCF;
+}
+
+
+/* Pantallas medianas y grandes */
+
+@media (min-width: 992px){
+
+	.texto-acerca{
+		padding-left: 70px;
+	}
+
+	.datos-contacto{
+		padding-left: 50px;
+	}
+
+}
+
+
+/* Celulares */
+
+@media (max-width: 767.98px){
+
+	.header-portafolio{
+		padding: 10px 20px;
+	}
+
+	#inicio{
+		padding: 70px 0 50px 0;
+	}
+
+	.profesion{
+		letter-spacing: 5px;
+	}
+
+	.cuadro-sobre{
+		right: 10px;
+		bottom: 20px;
+		width: 160px;
+		height: 160px;
+		border-width: 10px;
+	}
+
+	.cuadro-sobre h2{
+		font-size: 30px;
+	}
+
+	.cuadro-sobre p{
+		font-size: 13px;
+		letter-spacing: 4px;
+	}
+
+	.texto-acerca{
+		padding-left: 12px;
+		margin-top: 30px;
+	}
+
+	.trayectoria{
+		gap: 4px;
+		margin-top: 50px;
+	}
+
+	.trayectoria dd{
+		margin-bottom: 18px;
+	}
+
+	.titulo-seccion{
+		font-size: 36px;
+	}
+
+	.tarifas{
+		margin-top: 40px;
+	}
+
+	#servicios,
+	#portafolio,
+	#contacto{
+		padding: 60px 0;
+	}
+
+}
+
+
+/* Respeta a quien prefiere menos movimiento */
+
+@media (prefers-reduced-motion: reduce){
+
+	html{
+		scroll-behavior: auto;
+	}
+
+	#portafolio figure img{
+		transition: none;
+	}
+
+}
